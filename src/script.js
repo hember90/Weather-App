@@ -62,7 +62,7 @@ function showCurrentWeather(response) {
     "Humidity: " + Math.round(response.data.main.humidity) + "%";
 
   document.querySelector("#wind").innerHTML =
-    "Wind: " + Math.round(response.data.wind.speed) + " m/s";
+    "Wind: " + Math.round(response.data.wind.speed) + " mph";
 
   document.querySelector("#currentWeather").innerHTML =
     response.data.weather[0].description;
